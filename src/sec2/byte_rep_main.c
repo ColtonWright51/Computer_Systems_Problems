@@ -1,9 +1,11 @@
 #include "byte_representation.c"
 
 int main() {
-    test_show_bytes(12345);
+    int test_int;
+    printf("Enter an integer: ");
+    scanf("%d", &test_int);
+    test_show_bytes(test_int);
     printf("\n\n");
-    int i = 12345;
-    printBits(sizeof(i), &i);
+    printBits(sizeof(test_int), &test_int);
     return 0;
 }
